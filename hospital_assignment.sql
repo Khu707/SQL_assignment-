@@ -33,7 +33,7 @@ SELECT department,
 SUM(patientscount) AS total_patients
 FROM hospital
 GROUP BY department
-ORDER BY department  DESC
+ORDER BY total_patients  DESC
 LIMIT 3;
 
 -- 4-HOSPITAL WITH MAXIMUM MEDICAL EXPENSES
@@ -75,7 +75,7 @@ SELECT department,
 SUM(patientscount) AS total_patients
 FROM hospital
 GROUP BY department
-ORDER BY department  ASC
+ORDER BY total_patients  ASC
 LIMIT 1;
 
 
